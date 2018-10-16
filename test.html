@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="/js/jquery-2.2.1.min.js"></script>
+<script src="/js/widget.js"></script>
+<script>
+    const widget = new UWSPassportWidget({
+        projectId: '801',
+        baseUrl: '//uwspassport-staging.dalee.ru',
+        onSignOut (result) {
+            console.log(result)
+        },
+        onSignOut (error) {
+            console.error(error)
+        },
+        onSignUpSuccess (result) {
+            console.log(result)
+        },
+        onSignUpFailure (error) {
+            console.error(error)
+        },
+        onSignInSuccess (result) {
+            console.log(result)
+        },
+        onSignInFailure (error) {
+            console.error(error)
+        },
+        onGetTokenSuccess (result) {
+            console.log(result)
+        },
+        onGetTokenFailure (error) {
+        },
+        onGetProfileSuccess (result) {
+            console.log(result)
+        },
+        onGetProfileFailure (error) {
+        }
+    });
+</script>
+</body>
+</html>

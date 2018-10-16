@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('PTSans-CaptionBold.woff2') format('woff2'),
+        url('PTSans-CaptionBold.woff') format('woff'),
+        url('PTSans-CaptionBold.svg#PTSans-CaptionBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
